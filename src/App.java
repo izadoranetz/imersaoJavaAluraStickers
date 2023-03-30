@@ -26,9 +26,9 @@ public class App {
 
         // exibir e manipular dados
         for (Map<String, String> filme : listaDeFilmes) {
-            System.out.println(filme.get("title"));
-            System.out.println(filme.get("image"));
-            System.out.println(filme.get("imdbRating"));
+            System.out.println(ConsoleColors.YELLOW_BACKGROUND_BRIGHT + ConsoleColors.BLACK_BOLD_BRIGHT + filme.get("title") + ConsoleColors.RESET );
+            System.out.println(ConsoleColors.WHITE + filme.get("image") + ConsoleColors.RESET );
+            System.out.println(ConsoleColors.PURPLE + filme.get("imDbRating") + ConsoleColors.RESET );
         }
 
         // desafios:
